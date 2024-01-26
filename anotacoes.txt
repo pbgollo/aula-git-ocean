@@ -1,0 +1,22 @@
+git status
+git add "nome_do_arquivo" / git add . / git add --all
+git status
+git commit / git commit -m "nome_do_commit"
+git status
+git push
+git status
+git checkout "versao_desejada" / git checkout HEAD~1
+git log --oneline / git log --oneline --all / git log --oneline --all --graph
+git checkout -b "nome_da_nova_branch"
+git status
+git add "nome_do_arquivo"
+git status
+git commit
+git status
+git push
+git status
+git checkout main
+git merge "nome_da_branch"
+git status
+git push
+git status
