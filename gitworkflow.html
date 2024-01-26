@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Workflow</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            background-color: #282c35; /* Cor de fundo escura */
+            color: #abb2bf; /* Cor do texto */
+        }
+        code {
+            background-color: #3e4451; /* Cor de fundo da caixa de código */
+            border: 1px solid #4b5261; /* Cor da borda da caixa de código */
+            padding: 10px;
+            display: block;
+            overflow-x: auto;
+            margin-bottom: 20px;
+            color: #abb2bf; /* Cor do texto na caixa de código */
+            max-width: 50%; /* Largura máxima da caixa de código */
+        }
+        h1, h2 {
+            color: #61afef; 
+            font-family: 'Calibri', sans-serif; 
+        }
+        h4 {
+            color: #ffffff; 
+            font-family: 'Calibri', sans-serif; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Git Workflow</h1>
+
+    <h2>Principais Comandos</h2>
+
+    <h4>Verificar estado dos arquivos/diretórios</h4>
+    <code>
+        git status
+    </code>
+
+    <h4>Adicionar alterações ao commit</h4>
+    <code>
+        git add "nome_do_arquivo" / git add . / git add --all
+    </code>
+
+    <h4>Remover arquivo/diretório</h4>
+    <code>
+        git rm "nome_do_arquivo" / git rm -r "nome_do_diretorio"
+    </code>
+
+    <h4>Realizar um commit</h4>
+    <code>
+        git commit / git commit -m "nome_do_commit"
+    </code>
+
+    <h4>Enviar alterações para o repositório remoto</h4>
+    <code>
+        git push
+    </code>
+
+    <h4>Atualizar os arquivos no branch atual</h4>
+    <code>
+        git pull
+    </code>
+
+    <h4>Buscar as alterações, mas não aplicá-las no branch atual</h4>
+    <code>
+        git fetch
+    </code>
+
+    <h4>Visualizar histórico de commits</h4>
+    <code>
+        git log / git log --oneline / git log --oneline --all / git log --oneline --all --graph
+    </code>
+
+    <h4>Navegar para uma versão específica</h4>
+    <code>
+        git checkout "versao_desejada" / git checkout HEAD~1
+    </code>
+
+    <h4>Criar e alternar para uma nova branch</h4>
+    <code>
+        git checkout -b "nome_da_nova_branch"
+    </code>
+
+    <h4>Voltar para o branch principal</h4>
+    <code>
+        git checkout main
+    </code>
+
+    <h4>Mesclar uma branch na branch principal</h4>
+    <code>
+        git merge "nome_da_branch"
+    </code>
+
+    <h2>Fluxo Padrão</h2>
+    <code>
+        git status<br>
+        git add "nome_do_arquivo"<br>
+        git status<br>
+        git commit -m "nome_do_commit"<br>
+        git status<br>
+        git push<br>
+        git status<br>
+    </code>
+
+    <h2>Criar uma nova branch e mesclar com a principal</h2>
+    <code>
+        git checkout -b "nome_da_nova_branch"<br>
+        git status<br>
+        git add "nome_do_arquivo"<br>
+        git status<br>
+        git commit<br>
+        git status<br>
+        git push<br>
+        git status<br>
+        git checkout main<br>
+        git merge "nome_da_branch"<br>
+        git status<br>
+        git push<br>
+        git status
+    </code>
+</body>
+</html>
