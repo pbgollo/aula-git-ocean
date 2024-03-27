@@ -1,8 +1,8 @@
 # Git Workflow
 
-Este repositório contém um guia simples de Git Workflow. Para visualizar a página com a lista de comandos, acesse o link `https://pbgollo.github.io/git-workflow` em um navegador de sua preferência.
+Este repositório contém um guia simples do fluxo de trabalho Git. 
 
-Isso fornecerá uma visão do fluxo de trabalho e dos principais comandos do Git.
+Para visualizar a página com a lista dos principais comandos, acesse o link `https://pbgollo.github.io/git-workflow` em um navegador de sua preferência.
 
 ---
 
